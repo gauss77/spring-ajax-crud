@@ -1,0 +1,6 @@
+com\gurkan\spring\ajax\crud\WebInitializer.class
+com\gurkan\spring\ajax\crud\Config.class
+com\gurkan\spring\ajax\crud\model\PersonDAOImpl.class
+com\gurkan\spring\ajax\crud\controller\CRUDController.class
+com\gurkan\spring\ajax\crud\model\Person.class
+com\gurkan\spring\ajax\crud\model\PersonDAO.class
