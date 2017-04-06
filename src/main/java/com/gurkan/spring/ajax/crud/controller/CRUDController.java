@@ -35,13 +35,7 @@ public class CRUDController {
         map.put("hello", APP_NAME);
         return "index";
     }
-    
-    @RequestMapping(value = "/test" , method = RequestMethod.GET,produces = "application/json")
-    @ResponseBody
-    public Person test(ModelMap model) {
-        Person p = new Person(1, "Gurkan", 24);
-        return p;
-    }
+   
 //    ,headers = {"Accept=*"}
     @RequestMapping(value = "/addPerson" , method = RequestMethod.POST)
     @ResponseBody
@@ -65,12 +59,6 @@ public class CRUDController {
     @ResponseBody
     public void deletePerson(@RequestBody Map<String, String> id) {
         dAOImpl.remove(Integer.parseInt(id.get("id")));
-    }
-    
-    @RequestMapping(value = "/testmap" , method = RequestMethod.POST)
-    @ResponseBody
-    public void testmap(@RequestBody Map<String, String> id) {
-        System.out.println(id.get("question"));
     }
     
 }
